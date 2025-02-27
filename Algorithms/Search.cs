@@ -2,12 +2,12 @@ namespace Algorithms;
 
 public class Search
 {
-    public static void LinearSearch(int[] array, int target)
+    public static void LinearSearch(int[] array, int target) // O(n)
     {
 
     }
 
-    public static void BinarySearch(int[] array, int target)
+    public static void BinarySearch(int[] array, int target) // O(log n)
     {
 
     }

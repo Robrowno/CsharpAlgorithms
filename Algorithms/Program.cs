@@ -7,15 +7,18 @@ class Program
     {
         int[] nums = [10, 8, 7, 6, 17, 3, 14, 11, 22, 1, 2];
         
-        Sort.BubbleSort(nums);
+        Sort.BubbleSortInt(nums);
         
         PrintArray(nums);
         
     }
 
+    
+    // Console methods
     private static void PrintArray(int[] array)
     {
         Console.WriteLine(string.Join(", ", array));
     }
+    
     
 }

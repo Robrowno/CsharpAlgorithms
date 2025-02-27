@@ -12,3 +12,4 @@
 /Users/christianbrown/RiderProjects/Algorithms/Algorithms/obj/Debug/net8.0/Algorithms.pdb
 /Users/christianbrown/RiderProjects/Algorithms/Algorithms/obj/Debug/net8.0/Algorithms.genruntimeconfig.cache
 /Users/christianbrown/RiderProjects/Algorithms/Algorithms/obj/Debug/net8.0/ref/Algorithms.dll
+/Users/christianbrown/RiderProjects/Algorithms/Algorithms/obj/Debug/net8.0/Algorithms.sourcelink.json
