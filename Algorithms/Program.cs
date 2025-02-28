@@ -10,8 +10,8 @@ class Program
         // Sort.BubbleSortInt(nums);
         // Sort.SelectionSort(nums);
         Sort.InsertionSort(nums);
-        
         PrintArray(nums);
+        Search.SortedLinearSearch(nums, 12);
         
     }
 
@@ -21,6 +21,5 @@ class Program
     {
         Console.WriteLine(string.Join(", ", array));
     }
-    
     
 }
