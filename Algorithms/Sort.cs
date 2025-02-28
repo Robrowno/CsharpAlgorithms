@@ -83,9 +83,55 @@ public class Sort
         }
     }
 
-    public static void SelectionSort(int[] array)
+    public static void SelectionSortInt(int[] array) // O(n^2)
     {
+        
+        int length = array.Length;
 
+        for (int i = 0; i < length - 1; i++)
+        {
+            int smallestIndex = i;
+            
+            for (int j = i+1; j < length; j++)
+            {
+                if (array[smallestIndex] > array[j])
+                {
+                    smallestIndex =  j;
+                }
+            }
+
+            if (smallestIndex != i)
+            {
+                int temp = array[i];
+                array[i] = array[smallestIndex];
+                array[smallestIndex] = temp;
+            }
+        }
+    }
+
+    public static void SelectionSort<T>(T[] array) where T : IComparable<T> // O(n^2)
+    {
+        int length = array.Length;
+
+        for (int i = 0; i < length - 1; i++)
+        {
+            int smallestIndex = i;
+
+            for (int j = i+1; j < length; j++)
+            {
+                if (array[j].CompareTo(array[smallestIndex]) < 0)
+                {
+                    smallestIndex = j;
+                }
+            }
+
+            if (smallestIndex != i)
+            {
+                var temp = array[i];
+                array[i] = array[smallestIndex];
+                array[smallestIndex] = temp;
+            }
+        }
     }
 
     public static void InsertionSort(int[] array)

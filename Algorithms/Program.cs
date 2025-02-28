@@ -7,7 +7,8 @@ class Program
     {
         int[] nums = [10, 8, 7, 6, 17, 3, 14, 11, 22, 1, 2];
         
-        Sort.BubbleSortInt(nums);
+        // Sort.BubbleSortInt(nums);
+        Sort.SelectionSort(nums);
         
         PrintArray(nums);
         
