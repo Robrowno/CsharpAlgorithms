@@ -26,8 +26,12 @@
 .vs/
 [Bb]in/
 [Oo]bj/
+Algorithms/[Oo]bj/
+Algorithms/obj/
+Algorithms/[Bb]in/
+Algorithms/bin/
 _UpgradeReport_Files/
-[Pp]ackages/
+[Pp]ackages/s
 
 Thumbs.db
 Desktop.ini

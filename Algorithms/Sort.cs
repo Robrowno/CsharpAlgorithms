@@ -134,9 +134,41 @@ public class Sort
         }
     }
 
-    public static void InsertionSort(int[] array)
+    public static void InsertionSortInt(int[] array)
     {
+        int length =  array.Length;
+        // [10, 8, 7, 6, 17, 3, 14, 11, 22, 1, 2][10, 8, 7, 6, 17, 3, 14, 11, 22, 1, 2]
+        for (int i = 1; i < length; i++)
+        {
+            int current = array[i];
+            int j = i - 1;
 
+            while (j >= 0 && array[j] > current)
+            {
+                array[j + 1] = array[j];
+                j--;
+            }
+            array[j + 1] = current;
+        }
+
+    }
+
+    public static void InsertionSort<T>(T[] array) where T : IComparable<T>
+    {
+        int length = array.Length;
+
+        for (int i = 1; i < length; i++)
+        {
+            var  current = array[i];
+            int j = i - 1;
+
+            while (j >= 0 && array[j].CompareTo(current) > 0)
+            {
+                array[j + 1] = array[j];
+                j--;
+            }
+            array[j + 1] = current;
+        }
     }
 
     public static void ShellSort(int[] array)
