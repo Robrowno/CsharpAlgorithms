@@ -19,7 +19,7 @@ public class Search
         
     }
 
-    public static void SortedLinearSearch(int[] array, int target)
+    public static void SortedLinearSearch(int[] array, int target) // 0(n)
     {
         int length = array.Length;
 

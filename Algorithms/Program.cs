@@ -9,9 +9,12 @@ class Program
         
         // Sort.BubbleSortInt(nums);
         // Sort.SelectionSort(nums);
-        Sort.InsertionSort(nums);
+        // Sort.InsertionSort(nums);
+        // PrintArray(nums);
+        // Search.SortedLinearSearch(nums, 12);
+        
+        Utils.QuickSortHelper(nums);
         PrintArray(nums);
-        Search.SortedLinearSearch(nums, 12);
         
     }
 

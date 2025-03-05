@@ -176,8 +176,29 @@ public class Sort
 
     }
 
-    public static void QuickSort(int[] array)
+    public static void QuickSortInt(int[] array, int left, int right) // O(n log n) - average, O(n^2) - worst case
     {
+        if (left < right)
+        {
+            int pivot = Utils.PartitionInt(array, left, right);
+            QuickSortInt(array, left, pivot - 1);
+            QuickSortInt(array, pivot + 1, right);
+        }
 
+    }
+
+    public static void QuickSort<T>(T[] array, int left, int right) where T: IComparable<T>
+    {
+        if (left < right)
+        {
+            int pivot = Utils.Partition(array, left, right);
+            QuickSort(array, left, pivot - 1);
+            QuickSort(array, pivot + 1, right);
+        }
+    }
+
+    public static void MergeSort(int[] array)
+    {
+        
     }
 }
